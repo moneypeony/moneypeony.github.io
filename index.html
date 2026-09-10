@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>你好李焕英抢先版-影片信息、观看方式与相关疑问解答</title>
+<meta name="description" content="围绕你好李焕英抢先版这一搜索需求，整理影片基本信息、剧情背景、演员阵容、正版观看渠道判断方法、常见疑问与避坑提示，帮助观众安全、清晰地了解这部电影。">
+<meta name="keywords" content="你好李焕英抢先版,你好李焕英,电影观看渠道,正版片源,影片信息,观影指南">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --ink:#241f1c;
+    --ink-soft:#5c534d;
+    --paper:#fbf7f2;
+    --paper-2:#f3ece3;
+    --line:#e2d7c9;
+    --warm:#c8562f;
+    --warm-deep:#9c3d1d;
+    --gold:#d9a441;
+    --teal:#3d6b63;
+    --radius:14px;
+    --shadow:0 10px 30px rgba(60,40,25,.10);
+    --max:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,-apple-system,sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.75;
+    font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--warm-deep);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  img{max-width:100%;}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 20px;}
+
+  /* ---------- 顶栏 ---------- */
+  .topbar{
+    background:linear-gradient(90deg,#2b2320,#43352e 55%,#5b4033);
+    color:#f6ece1;
+    font-size:13.5px;
+  }
+  .topbar .wrap{
+    display:flex;justify-content:space-between;align-items:center;
+    gap:12px;min-height:42px;flex-wrap:wrap;
+  }
+  .topbar span{opacity:.85;}
+  .topbar .tagline{display:flex;align-items:center;gap:8px;}
+  .topbar .dot{width:7px;height:7px;border-radius:50%;background:var(--gold);display:inline-block;}
+
+  /* ---------- 页眉 ---------- */
+  header.site-head{
+    background:var(--paper);
+    border-bottom:1px solid var(--line);
+    position:sticky;top:0;z-index:40;
+    backdrop-filter:blur(6px);
+  }
+  .head-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:20px;min-height:74px;flex-wrap:wrap;
+  }
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand-mark{
+    width:44px;height:44px;border-radius:12px;flex:0 0 auto;
+    background:radial-gradient(circle at 30% 25%,#e0703f,#a83c1c);
+    color:#fff;display:grid;place-items:center;
+    font-weight:700;font-size:18px;letter-spacing:1px;
+    box-shadow:0 6px 16px rgba(168,60,28,.28);
+  }
+  .brand-text b{display:block;font-size:19px;letter-spacing:.5px;}
+  .brand-text small{color:var(--ink-soft);font-size:12.5px;letter-spacing:.4px;}
+
+  nav.main-nav ul{
+    list-style:none;display:flex;gap:6px;margin:0;padding:0;flex-wrap:wrap;
+  }
+  nav.main-nav a{
+    display:block;padding:8px 14px;border-radius:999px;
+    color:var(--ink-soft);font-size:14.5px;font-weight:500;
+  }
+  nav.main-nav a:hover{background:var(--paper-2);color:var(--warm-deep);text-decoration:none;}
+  nav.main-nav a.active{background:var(--warm);color:#fff;}
+
+  /* ---------- 首屏 ---------- */
+  .hero{
+    background:
+      radial-gradient(900px 420px at 88% -10%,rgba(217,164,65,.28),transparent 60%),
+      linear-gradient(160deg,#fffaf4 0%,#f6ebdd 60%,#f1e2d1 100%);
+    border-bottom:1px solid var(--line);
+    padding:52px 0 46px;
+  }
+  .hero-grid{
+    display:grid;grid-template-columns:1.35fr .95fr;gap:42px;align-items:start;
+  }
+  .kicker{
+    display:inline-flex;align-items:center;gap:8px;
+    background:#fff;border:1px solid var(--line);border-radius:999px;
+    padding:6px 14px;font-size:13px;color:var(--warm-deep);font-weight:600;
+    box-shadow:0 3px 10px rgba(120,80,40,.07);
+  }
+  .hero h1{
+    font-size:clamp(28px,4vw,42px);
+    line-height:1.28;margin:18px 0 14px;letter-spacing:.5px;
+  }
+  .hero h1 em{
+    font-style:normal;color:var(--warm-deep);
+    border-bottom:3px solid rgba(217,164,65,.6);
+  }
+  .hero p.lead{
+    font-size:16.5px;color:var(--ink-soft);margin:0 0 22px;max-width:62ch;
+  }
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px;}
+  .btn{
+    display:inline-block;padding:12px 24px;border-radius:999px;
+    font-size:15px;font-weight:600;border:1px solid transparent;cursor:pointer;
+  }
+  .btn-primary{background:var(--warm);color:#fff;box-shadow:0 8px 20px rgba(200,86,47,.28);}
+  .btn-primary:hover{background:var(--warm-deep);text-decoration:none;color:#fff;}
+  .btn-ghost{background:#fff;color:var(--ink);border-color:var(--line);}
+  .btn-ghost:hover{border-color:var(--warm);color:var(--warm-deep);text-decoration:none;}
+
+  .hero-points{
+    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;
+    margin:0;padding:0;list-style:none;
+  }
+  .hero-points li{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:14px 16px;font-size:13.8px;color:var(--ink-soft);
+  }
+  .hero-points li b{display:block;color:var(--ink);font-size:15px;margin-bottom:4px;}
+
+  .info-card{
+    background:#fff;border:1px solid var(--line);border-radius:18px;
+    padding:24px;box-shadow:var(--shadow);
+  }
+  .info-card h2{
+    font-size:17px;margin:0 0 14px;padding-bottom:12px;border-bottom:1px dashed var(--line);
+  }
+  .info-list{list-style:none;margin:0;padding:0;}
+  .info-list li{
+    display:flex;gap:12px;padding:9px 0;font-size:14.5px;
+    border-bottom:1px solid #f4ece2;
+  }
+  .info-list li:last-child{border-bottom:0;}
+  .info-list .k{color:var(--ink-soft);flex:0 0 76px;}
+  .info-list .v{color:var(--ink);font-weight:500;}
+  .notice{
+    margin-top:16px;background:#fdf3e7;border:1px solid #f0dcc0;
+    border-radius:12px;padding:12px 14px;font-size:13.4px;color:#7a5320;
+  }
+
+  /* ---------- 通用区块 ---------- */
+  section{padding:56px 0;}
+  section.alt{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .sec-head{margin-bottom:30px;max-width:70ch;}
+  .sec-head .eyebrow{
+    font-size:13px;font-weight:700;letter-spacing:2px;color:var(--warm);
+    text-transform:uppercase;
+  }
+  .sec-head h2{font-size:clamp(22px,2.6vw,29px);margin:8px 0 10px;line-height:1.35;}
+  .sec-head p{margin:0;color:var(--ink-soft);font-size:15.5px;}
+
+  /* ---------- 剧情/内容区 ---------- */
+  .story-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:start;}
+  .prose p{margin:0 0 16px;color:#3a322d;}
+  .prose h3{font-size:18.5px;margin:26px 0 10px;}
+  .prose ul{margin:0 0 16px;padding-left:20px;color:#3a322d;}
+  .prose li{margin-bottom:8px;}
+
+  .side-note{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px;box-shadow:0 6px 18px rgba(90,60,35,.07);
+  }
+  .side-note h3{font-size:16px;margin:0 0 12px;}
+  .side-note ol{margin:0;padding-left:20px;font-size:14.3px;color:var(--ink-soft);}
+  .side-note li{margin-bottom:10px;}
+
+  /* ---------- 人物卡片 ---------- */
+  .cast-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;
+  }
+  .cast-card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px;transition:transform .18s ease,box-shadow .18s ease;
+  }
+  .cast-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);}
+  .cast-avatar{
+    width:52px;height:52px;border-radius:50%;display:grid;place-items:center;
+    font-weight:700;color:#fff;font-size:17px;margin-bottom:14px;
+    background:linear-gradient(135deg,#c8562f,#d9a441);
+  }
+  .cast-card b{display:block;font-size:16px;margin-bottom:4px;}
+  .cast-card span{font-size:13px;color:var(--warm-deep);font-weight:600;display:block;margin-bottom:8px;}
+  .cast-card p{margin:0;font-size:14px;color:var(--ink-soft);}
+
+  /* ---------- 观看渠道判断 ---------- */
+  .check-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+  .check{
+    background:#fff;border:1px solid var(--line);border-left:4px solid var(--teal);
+    border-radius:12px;padding:20px;
+  }
+  .check.warn{border-left-color:var(--warm);}
+  .check h3{font-size:16px;margin:0 0 10px;display:flex;align-items:center;gap:8px;}
+  .check h3 .num{
+    width:22px;height:22px;border-radius:50%;background:var(--teal);color:#fff;
+    font-size:12.5px;display:grid;place-items:center;flex:0 0 auto;
+  }
+  .check.warn h3 .num{background:var(--warm);}
+  .check p{margin:0 0 10px;font-size:14.3px;color:var(--ink-soft);}
+  .check ul{margin:0;padding-left:18px;font-size:14px;color:var(--ink-soft);}
+  .check li{margin-bottom:6px;}
+
+  /* ---------- 时间线 ---------- */
+  .timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--line);}
+  .timeline li{position:relative;padding:0 0 24px 26px;}
+  .timeline li::before{
+    content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;
+    border-radius:50%;background:#fff;border:3px solid var(--gold);
+  }
+  .timeline b{display:block;font-size:15.5px;margin-bottom:4px;}
+  .timeline p{margin:0;font-size:14.3px;color:var(--ink-soft);}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{max-width:900px;}
+  details.faq{
+    background:#fff;border:1px solid var(--line);border-radius:12px;
+    padding:0;margin-bottom:12px;overflow:hidden;
+  }
+  details.faq summary{
+    cursor:pointer;padding:16px 20px;font-weight:600;font-size:15.5px;
+    list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center;
+  }
+  details.faq summary::-webkit-details-marker{display:none;}
+  details.faq summary::after{
+    content:"+";font-size:20px;color:var(--warm);font-weight:400;flex:0 0 auto;
+  }
+  details.faq[open] summary::after{content:"–";}
+  details.faq[open] summary{border-bottom:1px solid var(--line);background:#fffaf4;}
+  details.faq .faq-body{padding:16px 20px 18px;font-size:14.6px;color:var(--ink-soft);}
+  details.faq .faq-body p{margin:0 0 10px;}
+  details.faq .faq-body p:last-child{margin-bottom:0;}
+
+  /* ---------- 相关推荐 ---------- */
+  .rel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+  .rel-card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px;display:flex;flex-direction:column;gap:8px;
+  }
+  .rel-card .chip{
+    align-self:flex-start;font-size:12px;font-weight:700;color:var(--teal);
+    background:#e9f2f0;border-radius:999px;padding:3px 10px;
+  }
+  .rel-card b{font-size:16px;}
+  .rel-card p{margin:0;font-size:14px;color:var(--ink-soft);flex:1;}
+
+  /* ---------- 页脚 ---------- */
+  footer.site-foot{
+    background:#2b2320;color:#cbbdb2;padding:46px 0 26px;font-size:14px;
+  }
+  .foot-grid{
+    display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;
+    padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.12);
+  }
+  footer.site-foot h4{color:#f4e9de;font-size:15px;margin:0 0 14px;}
+  footer.site-foot p{margin:0 0 10px;line-height:1.8;color:#b8a99d;}
+  footer.site-foot ul{list-style:none;margin:0;padding:0;}
+  footer.site-foot li{margin-bottom:9px;}
+  footer.site-foot a{color:#cbbdb2;}
+  footer.site-foot a:hover{color:#f0c98a;}
+  .foot-bottom{
+    padding-top:20px;display:flex;justify-content:space-between;gap:14px;
+    flex-wrap:wrap;font-size:13px;color:#9d8f84;
+  }
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width:980px){
+    .hero-grid{grid-template-columns:1fr;gap:30px;}
+    .story-grid{grid-template-columns:1fr;gap:26px;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:680px){
+    body{font-size:15.5px;}
+    .hero{padding:36px 0 34px;}
+    section{padding:40px 0;}
+    .hero-points{grid-template-columns:1fr;}
+    .head-inner{min-height:auto;padding:12px 0;}
+    nav.main-nav ul{gap:2px;}
+    nav.main-nav a{padding:7px 11px;font-size:13.5px;}
+    .foot-grid{grid-template-columns:1fr;gap:24px;}
+    .hero-actions .btn{width:100%;text-align:center;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="tagline"><i class="dot"></i>影片资料整理 · 信息以官方公开渠道为准</span>
+    <span>仅提供内容说明与观影常识，不提供任何片源下载</span>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <div class="brand">
+      <div class="brand-mark">焕</div>
+      <div class="brand-text">
+        <b>你好李焕英 · 资料站</b>
+        <small>影片信息 · 观看常识 · 常见疑问</small>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="主导航">
+      <ul>
+        <li><a href="#intro" class="active">影片概览</a></li>
+        <li><a href="#story">剧情背景</a></li>
+        <li><a href="#cast">主要演员</a></li>
+        <li><a href="#channel">观看渠道</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero" id="intro">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="kicker">搜索「你好李焕英抢先版」的观众，先看这里</span>
+        <h1>关于《你好李焕英》<em>抢先版</em>，你需要先弄清楚的事</h1>
+        <p class="lead">
+          很多观众搜索「你好李焕英抢先版」，是想尽早看到这部影片，或者想确认网上流传的版本是否可靠。
+          这里把影片的基本信息、故事背景、演员阵容，以及判断观看渠道是否正规的方法集中整理出来，
+          帮助你在不踩坑的前提下了解这部电影。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#channel">如何判断正规渠道</a>
+          <a class="btn btn-ghost" href="#faq">查看常见疑问</a>
+        </div>
+        <ul class="hero-points">
+          <li><b>先看信息</b>影片类型、时长、上映背景等基本资料一次看全</li>
+          <li><b>再看渠道</b>分清院线、正版平台与来源不明链接的区别</li>
+          <li><b>最后避坑</b>识别以「抢先版」为名的常见诱导套路</li>
+        </ul>
+      </div>
+
+      <aside class="info-card" aria-label="影片基本信息">
+        <h2>影片基本信息</h2>
+        <ul class="info-list">
+          <li><span class="k">片名</span><span class="v">你好，李焕英</span></li>
+          <li><span class="k">类型</span><span class="v">喜剧 / 剧情 / 家庭</span></li>
+          <li><span class="k">导演</span><span class="v">贾玲</span></li>
+          <li><span class="k">编剧</span><span class="v">贾玲、孙集斌等</span></li>
+          <li><span class="k">主演</span><span class="v">贾玲、张小斐、沈腾、陈赫等</span></li>
+          <li><span class="k">题材来源</span><span class="v">改编自同名小品，带有自传色彩</span></li>
+          <li><span class="k">语言</span><span class="v">普通话</span></li>
+        </ul>
+        <div class="notice">
+          说明：本页只做影片资料与观影常识整理，不提供、不指向任何影片下载或在线播放地址。
+          具体上映、上线与播出信息，请以片方及正规平台公布的内容为准。
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 剧情背景 -->
+  <section id="story">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Story &amp; Background</div>
+        <h2>故事讲的是什么，为什么它会被反复搜索</h2>
+        <p>理解剧情背景，有助于判断网上各种「抢先版」说法是否与影片本身相符。</p>
+      </div>
+
+      <div class="story-grid">
+        <div class="prose">
+          <p>
+            《你好，李焕英》的故事围绕女儿贾晓玲与母亲李焕英展开。一次意外之后，
+            贾晓玲回到了母亲年轻时的年代，并以一种特殊的方式走进了母亲的生活圈。
+            影片的主线并不复杂，重点在于女儿试图让母亲过得更开心、更少遗憾，
+            而随着情节推进，观众会逐渐发现这段关系里还有另一层视角。
+          </p>
+          <p>
+            影片改编自贾玲此前创作的同名小品，带有明显的个人情感色彩。
+            它把喜剧桥段与家庭情感放在同一条线上推进：前半段以年代感的生活细节和人物互动制造笑点，
+            后半段则把情绪落点收回到母女关系上。这种结构也是它在上映期间被大量讨论的原因之一。
+          </p>
+
+          <h3>影片的几个明显特征</h3>
+          <ul>
+            <li><strong>年代质感：</strong>故事背景设置在二十世纪八十年代，服装、道具、厂区生活场景都围绕那个年代展开。</li>
+            <li><strong>喜剧与情感并重：</strong>笑点密集出现，但最终服务于亲情主题，而不是单纯的段子堆叠。</li>
+            <li><strong>自传底色：</strong>主创的个人经历为影片提供了情感基础，这也是观众容易产生共鸣的原因。</li>
+            <li><strong>群像表演：</strong>除主角外，厂区同事、街坊等配角共同构成了完整的生活氛围。</li>
+          </ul>
+
+          <h3>为什么会有「抢先版」这样的搜索词</h3>
+          <p>
+            影片热度较高时，网络上常会出现「抢先版」「高清完整版」「内部资源」等说法。
+            这类词通常反映的是一种「想更早看到」的需求，但同时也容易被用来包装来源不明的链接。
+            对普通观众来说，更稳妥的做法是先确认影片的正式发行与上线节奏，再选择正规渠道观看，
+            而不是根据标题里的「抢先」二字判断内容是否可信。
+          </p>
+        </div>
+
+        <aside class="side-note">
+          <h3>观影前的三点提醒</h3>
+          <ol>
+            <li>先确认影片是否已在你所在地区正式上映或上线，避免被「提前泄露」类说法误导。</li>
+            <li>正规平台的影片页面通常有完整简介、演职员表和清晰的分级或提示信息。</li>
+            <li>遇到要求安装陌生播放器、填写账号密码或付费到个人账户的页面，建议直接关闭。</li>
+          </ol>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 演员 -->
+  <section class="alt" id="cast">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Cast</div>
+        <h2>主要演员与角色关系</h2>
+        <p>了解演员阵容，有助于在搜索影片相关内容时辨别信息是否对得上。</p>
+      </div>
+      <div class="cast-grid">
+        <article class="cast-card">
+          <div class="cast-avatar">贾</div>
+          <b>贾玲</b>
+          <span>饰 贾晓玲 / 导演</span>
+          <p>影片的主演兼导演，故事以她与母亲的关系为情感核心展开。</p>
+        </article>
+        <article class="cast-card">
+          <div class="cast-avatar">张</div>
+          <b>张小斐</b>
+          <span>饰 李焕英</span>
+          <p>饰演年轻时期的母亲李焕英，是影片情感表达的关键人物。</p>
+        </article>
+        <article class="cast-card">
+          <div class="cast-avatar">沈</div>
+          <b>沈腾</b>
+          <span>饰 沈光林</span>
+          <p>承担了影片中大量喜剧段落，与主角一家的互动构成重要支线。</p>
+        </article>
+        <article class="cast-card">
+          <div class="cast-avatar">陈</div>
+          <b>陈赫</b>
+          <span>饰 冷特</span>
+          <p>厂区青年角色之一，参与多条年代生活场景的推进。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 观看渠道 -->
+  <section id="channel">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Viewing Guide</div>
+        <h2>怎样判断一个观看渠道是否正规</h2>
+        <p>与其纠结「抢先版」是真是假，不如掌握一套能自己判断的方法。</p>
+      </div>
+
+      <div class="check-grid">
+        <div class="check">
+          <h3><span class="num">1</span>先看来源主体</h3>
+          <p>正规渠道背后通常有明确的运营主体，页面会展示公司名称、备案信息或平台品牌。</p>
+          <ul>
+            <li>页面是否有清晰的平台标识与联系方式</li>
+            <li>是否有用户协议、隐私政策等常规页面</li>
+            <li>域名是否与该平台一贯使用的域名一致</li>
+          </ul>
+        </div>
+
+        <div class="check">
+          <h3><span class="num">2</span>再看播放方式</h3>
+          <p>正版平台一般直接播放，不需要额外安装来源不明的插件或播放器。</p>
+          <ul>
+            <li>是否需要下载陌生软件才能观看</li>
+            <li>是否频繁弹出与影片无关的广告窗口</li>
+            <li>是否要求关闭杀毒软件或浏览器安全提示</li>
+          </ul>
+        </div>
+
+        <div class="check warn">
+          <h3><span class="num">3</span>警惕这些信号</h3>
+          <p>以下情况在「抢先版」类页面中出现频率较高，遇到时应提高警惕。</p>
+          <ul>
+            <li>标题强调「内部资源」「未删减」「全网首发」等夸张说法</li>
+            <li>要求扫码付款到个人账户，或先充值再解锁内容</li>
+            <li>要求填写手机号、验证码、账号密码等敏感信息</li>
+            <li>页面跳转频繁，关闭按钮难以点击</li>
+          </ul>
+        </div>
+
+        <div class="check">
+          <h3><span class="num">4</span>最后核对信息</h3>
+          <p>把页面上的影片信息与公开资料对照，往往能快速发现异常。</p>
+          <ul>
+            <li>片名、导演、主演是否与公开资料一致</li>
+            <li>时长是否明显偏离正常范围</li>
+            <li>简介内容是否与影片实际剧情相符</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 时间线 -->
+  <section class="alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Timeline</div>
+        <h2>一部影片从上映到可在家观看，通常经历哪些阶段</h2>
+        <p>了解大致流程，有助于理解为什么「抢先版」这种说法本身就值得怀疑。</p>
+      </div>
+      <ol class="timeline">
+        <li>
+          <b>院线上映阶段</b>
+          <p>影片在影院公映，观众通过购票在影院观看。这一阶段通常不会同步上线网络平台。</p>
+        </li>
+        <li>
+          <b>密钥延期与档期调整</b>
+          <p>部分影片会根据市场反馈延长放映时间，具体安排由片方与影院决定。</p>
+        </li>
+        <li>
+          <b>网络平台上线</b>
+          <p>院线放映结束后，影片可能陆续在正版视频平台上线，通常需要平台会员或付费点播。</p>
+        </li>
+        <li>
+          <b>电视与航空等渠道播出</b>
+          <p>此后还可能出现在电视电影频道、航空娱乐系统等授权渠道中。</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">FAQ</div>
+        <h2>关于「你好李焕英抢先版」的常见疑问</h2>
+        <p>以下回答基于公开信息与常见现象整理，不构成对任何具体平台的推荐。</p>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq" open>
+          <summary>网上说的「抢先版」一般指什么？</summary>
+          <div class="faq-body">
+            <p>
+              这个词并没有统一的官方定义。它有时被用来指影院放映阶段的枪版、偷拍版本，
+              有时只是某些页面为了吸引点击而使用的标题词。无论哪种情况，这类内容通常都不属于正规发行渠道，
+              画质、音质和完整性也难以保证。
+            </p>
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>为什么不应该通过来源不明的链接观看？</summary>
+          <div class="faq-body">
+            <p>
+              来源不明的页面除了内容本身不可靠，还可能带来其他风险，例如诱导安装软件、
+              收集个人信息、跳转到与影片无关的页面等。相比之下，通过正规平台观看，
+              在画面质量、字幕完整度和账号安全方面都更有保障。
+            </p>
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>想尽快看到这部电影，可以怎么做？</summary>
+          <div class="faq-body">
+            <p>
+              比较稳妥的方式是关注片方与正规视频平台的官方信息，
+              确认影片是否已经上线以及上线方式（会员观看、付费点播等）。
+              如果影片仍在院线放映期，购票到影院观看也是常见选择。
+            </p>
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>影片适合哪些观众观看？</summary>
+          <div class="faq-body">
+            <p>
+              影片以家庭亲情为主线，包含大量喜剧桥段，整体基调温和。
+              由于涉及母女情感与离别主题，部分情节可能引起较强情绪反应，
+              观众可根据自身情况选择观看时机。
+            </p>
+          </div>
+        </details>
+
+        <details class="faq">
+          <summary>搜索时看到的信息互相矛盾，怎么判断？</summary>
+          <div class="faq-body">
+            <p>
+              建议以片方官方账号、正规视频平台的影片页面以及主流媒体的公开报道作为主要参考。
+              如果某个页面的片名、演职员、时长等基础信息都与公开资料不符，
+              那么它提供的内容也很难让人放心。
+            </p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 相关 -->
+  <section class="alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Related</div>
+        <h2>你可能还想了解</h2>
+        <p>围绕这部影片，观众常见的延伸关注点。</p>
+      </div>
+      <div class="rel-grid">
+        <article class="rel-card">
+          <span class="chip">背景</span>
+          <b>同名小品的由来</b>
+          <p>影片改编自贾玲此前在舞台上表演的同名小品，理解小品内容有助于理解电影的情感基础。</p>
+        </article>
+        <article class="rel-card">
+          <span class="chip">主题</span>
+          <b>母女关系与遗憾</b>
+          <p>影片把「如果能让妈妈更幸福」这一假设作为叙事起点，这也是观众讨论最多的部分。</p>
+        </article>
+        <article class="rel-card">
+          <span class="chip">常识</span>
+          <b>正版与盗版的区别</b>
+          <p>从画面清晰度、字幕完整性、观看安全等角度，了解为什么正规渠道更值得选择。</p>
+        </article>
+        <article class="rel-card">
+          <span class="chip">提示</span>
+          <b>网络观影安全建议</b>
+          <p>不随意安装陌生软件、不向个人账户转账、不在可疑页面填写账号密码，是基本的自我保护方式。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>你好李焕英 · 资料站</h4>
+        <p>
+          本站围绕《你好，李焕英》整理影片基本信息、剧情背景、演员阵容与观影常识，
+          帮助观众在搜索相关内容时获得更清晰的判断依据。
+        </p>
+        <p>本站不提供任何影片下载、在线播放或资源分享服务。</p>
+      </div>
+      <div>
+        <h4>页面导航</h4>
+        <ul>
+          <li><a href="#intro">影片概览</a></li>
+          <li><a href="#story">剧情背景</a></li>
+          <li><a href="#cast">主要演员</a></li>
+          <li><a href="#channel">观看渠道判断</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>温馨提示</h4>
+        <ul>
+          <li>影片信息以官方公开渠道为准</li>
+          <li>请通过正规平台观看影视内容</li>
+          <li>注意保护个人账号与支付信息</li>
+          <li>遇到可疑页面建议及时关闭</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2024 你好李焕英 · 资料站　内容仅供信息参考</span>
+      <span>本站与影片出品方、发行方无隶属关系</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var links = document.querySelectorAll('nav.main-nav a[href^="#"]');
+    var sections = [];
+    links.forEach(function (a) {
+      var id = a.getAttribute('href').slice(1);
+      var el = document.getElementById(id);
+      if (el) sections.push({ link: a, el: el });
+    });
+
+    function onScroll() {
+      var pos = window.scrollY + 140;
+      var current = sections.length ? sections[0] : null;
+      sections.forEach(function (item) {
+        if (item.el.offsetTop <= pos) current = item;
+      });
+      links.forEach(function (a) { a.classList.remove('active'); });
+      if (current) current.link.classList.add('active');
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+</script>
+
+</body>
+            </html>
